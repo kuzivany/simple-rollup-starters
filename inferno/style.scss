@@ -1,0 +1,38 @@
+$main-colour: #e41f1c;
+
+body {
+	font: normal 1em/1.25 serif;
+	margin: 0;
+}
+
+.App {
+	text-align: center;
+
+	&-logo {
+		height: 80px;
+		width: auto;
+		animation: App-logo-spin 1s ease-out;
+	}
+	
+	&-header {
+		background-color: #eaeaea;
+		height: 150px;
+		padding: 20px;
+		color: #494949;
+	}
+	
+	&-intro {
+		font-size: large;
+	}
+}
+
+code {
+	color: darken($main-colour, 5%);
+}
+
+@keyframes App-logo-spin {
+	0% { transform: scale(1); }
+	25% { transform: scale(1.1); }
+	50% { transform: scale(.9); }
+	100% { transform: scale(1); }
+}
